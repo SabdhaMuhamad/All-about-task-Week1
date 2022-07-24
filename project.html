@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link type="text/css" rel="stylesheet" href="assets/style/style1.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <div class="left-side">
+        <a href="index.html">
+          <img src="assets/img/logo.png" alt="logo" />
+        </a>
+        <div>
+          <ul>
+            <li>
+              <a href="index.html"> Home </a>
+            </li>
+            <li>
+              <a href="project.html" class="list-active"> My Project </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-side">
+        <a href="contact-me.html"> Contact Me </a>
+      </div>
+    </nav>
+
+    <!-- Form -->
+    <div class="container">
+      <div class="form-container">
+          <form onsubmit="myproject(event)">
+              <h4>ADD MY PROJECT</h4>
+              <div class="project-input">
+                  <label for="project">Project Name</label>
+                  <input id="project" required>
+              </div>
+              <div class="date-input">
+                  <div class="start-date">
+                      <label for="start-input">Start Date</label>
+                      <input id="start-input" type="date" required>
+                  </div>
+                  <div class="end-date">
+                      <label for="end-input">End Date</label>
+                      <input id="end-input" type="date" required>
+                  </div>
+              </div>
+              <div class="desc-input">
+                  <label for="desc">Description</label>
+                  <textarea id="description" cols="30" rows="8" placeholder="Write Your Description"></textarea>
+              </div>
+              <div class="tech-input">
+                  <label for="check-box-detail">Technologies</label>
+                  <div class="left-checkbox">
+                      <div>
+                          <input type="checkbox" id="node" value="node">
+                          <label for="node">Node JS</label>
+                      </div>
+                      <div>
+                          <input type="checkbox" id="react" value="react">
+                          <label for="react">React JS</label>
+                      </div>
+                  </div>
+                  <div class="right-checkbox">
+                      <div>
+                          <input type="checkbox" id="next" value="next">
+                          <label for="next">Next JS</label>
+                      </div>
+                      <div>
+                          <input type="checkbox" id="type" value="type">
+                          <label for="type">Type Script</label>
+                      </div>
+                  </div>
+              </div>
+              <br>
+              <div class="img">
+                  <label>Upload Image</label>
+                  <label class="input-choose" for="upload">
+                      <p>Choose</p>
+                      <img src="assets/img/file.png" alt="file">
+                  </label>
+                  <input type="file" id="upload" hidden>
+              </div>
+              <div class="submit">
+                  <button>SUBMIT</button>
+              </div>
+          </form>
+      </div>
+  </div>
+  <div class="container-1">
+      <h4 class="title">MY PROJECT</h4>
+      <div id="contents" class="project-list">
+
+          <div class="project-list-item">
+              <a href="project-detail.html">
+                  <div class="card-img">
+                      <img src='assets/img/diri1.jpg' alt="diri1">
+                  </div>
+                  <div class="card-title">
+                      <h3>DumbWays Web App</h3>
+                  </div>
+                  <div class="card-drs">
+                      <p>Durasi 3 bulan</p>
+                  
+                  </div>
+                  <div class="card-desc">
+                      <p>
+                          Lulusan elektro yang mau mencoba dibidang IT.
+                        </p>
+                  </div>
+                  <div class="card-icon">
+                      <img src="assets/img/javascript.png" alt="javascript">
+                      <img src="assets/img/node.png" alt="node">
+                      <img src="assets/img/react.png" alt="react">
+                      <img src="assets/img/type.png" alt="type">
+                  </div>
+              </a>
+              <div class="card-btn">
+                  <div class="edit">
+                      <button>EDIT</button>
+                  </div>
+                  <div class="card-delete">
+                      <button>DELETE</button>
+                  </div>
+              </div>
+          
+          </div>
+
+      </div>
+  </div>
+  <script type="text/javascript" src="javascript/project.js"></script>
+</body>
+<footer style="text-align: end;">
+    <p> &#169; 2022, Bootcamp Dumbways.</p>
+</footer>
+</html>

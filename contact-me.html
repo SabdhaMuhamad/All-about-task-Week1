@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Creating From, Navbar & Layout</title>
+        <link rel="stylesheet" type="text/css" href="assets/style/style1.css" >
+        <script type="text/javascript" src="javascript/script.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="left-side">
+            <a href="index.html">
+                <img src="assets/img/logo.png">
+            </a>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="project.html">My Project</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-side">
+                <a href="contact-me.html"></a>Contact Me</a>
+            </div>
+        </nav>
+        <div class="page">
+            <form class="contact-me">
+                <h1>PLEASE FILL IN THE BRIEF BIO BELOW</h1>
+                <div>
+                    <label for="input-name">Full Name</label>
+                    <input id="input-name" type="name" placeholder="Write your name">
+                </div>
+                <div>
+                    <label for="input-email">Email</label>
+                    <input id="input-email" type="email">
+                </div>
+                <div>
+                    <label for="input-phone">Phone Number</label>
+                    <input id="input-phone" type="phone">
+                </div>
+                <div>
+                    <label for="input-subject">Subject</label>
+                    <select id="input-subject">
+                        <option hidden value=""></option>
+                        <option> </option>
+                        <option>Let's Talk</option>
+                        <option>Let's Collaboration</option>
+                        <option>I am Hiring</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="input-message">Your Message</label>
+                    <textarea id="input-message" rows="8" placeholder="Write Your Message"></textarea>
+                </div>
+                <button id="submit" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+    </body>
+    <footer style="text-align: end;">
+        <p> &#169; 2022, Bootcamp Dumbways.</p>
+    </footer>
+</html>
