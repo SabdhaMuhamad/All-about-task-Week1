@@ -93,7 +93,7 @@ function renderProject() {
   
       </div>`;
   }
-  alert("Your Project is upload");
+  alert("Thank You. Your Project is upload");
 }
 
 function getFullTime(endDate, startDate) {
@@ -105,35 +105,35 @@ function getFullTime(endDate, startDate) {
   if (startYear == endYear) {
     if (startMonth == endMonth) {
       month = 1;
-      return "durasi " + month + " bulan";
+      return month + " Month";
     } else {
       month = endMonth - startMonth;
-      return "durasi " + month + " bulan";
+      return month + " Month";
     }
   }
 
   if (endYear > startYear) {
     if (endYear - startYear == 1) {
       if (startMonth == endMonth) {
-        return "durasi 1 tahun";
+        return "1 Year";
       } else if (startMonth > endMonth) {
         month = (startMonth - endMonth - 12) * -1;
-        return "durasi " + month + " bulan";
+        return month + " Month";
       } else if (startMonth < endMonth) {
         month = endMonth - startMonth;
-        return "durasi 1 tahun " + month + bulan;
+        return "1 Year" + month + bulan;
       }
     } else {
       year = endYear - startYear;
       if (startMonth == endMonth) {
-        return "durasi " + year + " tahun";
+        return year + " Year";
       } else if (startMonth > endMonth) {
         year -= 1;
         month = (startMonth - endMonth - 12) * -1;
-        return "durasi " + year + " tahun " + month + " bulan";
+        return year + " Year " + month + " Month";
       } else if (startMonth < endMonth) {
         month = endMonth - startMonth;
-        return "durasi " + year + " tahun " + month + " bulan";
+        return year + " Year " + month + " Month";
       }
     }
   }
